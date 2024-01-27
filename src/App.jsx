@@ -10,8 +10,10 @@ function App() {
   const [long, setLong] = useState(0);
   const [data, setData] = useState({});
 
-  const apiUrl=import.meta.env.VITE_REACT_APP_API_URL;
-  const apiKey= import.meta.env.VITE_REACT_APP_API_KEY;
+  // const apiUrl=import.meta.env.VITE_REACT_APP_API_URL;
+  // const apiKey= import.meta.env.VITE_REACT_APP_API_KEY;
+  const apiKey="6d2bdb5cc54d2b2319b0c58b5c0cc22a";
+  const apiUrl="https://api.openweathermap.org/data/2.5"
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(function (position) {
